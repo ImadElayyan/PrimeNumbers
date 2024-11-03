@@ -1,0 +1,4 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "PrimeNumbers.WebApi/bin/Release/net8.0/publish"
+}

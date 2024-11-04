@@ -40,7 +40,7 @@ app.MapGet("/weatherforecast", () =>
 app.MapGet("/randomprime", () =>
 {
     var random = new Random();
-    var primeNumbers = Enumerable.Range(1, 10000).Where(x => IsPrime(x)).ToList();
+    var primeNumbers = Enumerable.Range(1, 10).Where(x => IsPrime(x)).ToList();
     var randomPrime = primeNumbers[random.Next(primeNumbers.Count)];
     return randomPrime;
 }).WithName("GetRandomPrime")
